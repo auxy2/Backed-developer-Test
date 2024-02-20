@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"net/http"
+	// "context"
 	"github.com/gin-gonic/gin"
+	// "net/http"
 )
 
 type product struct {
@@ -20,9 +20,12 @@ var products = []product{
 	{Id: "4", Product: "microwave", Description: "digital microwave with parfect heat condition", Price: 40589},
 }
 
-func main (){
+func getProduts(context *gin.Context) {
+	context.IndentedJSON(200, products)
+}
+
+func main() {
 	router := gin.Default()
-	router.GET("/products")
+	router.GET("/products", getProduts)
 	router.Run("localhost:9090")
 }
-fmt.Printf("you are welcome")
