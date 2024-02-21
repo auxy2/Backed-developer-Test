@@ -1,4 +1,4 @@
-# Title: Product Management API Documentation
+<!-- # Title: Product Management API Documentation
 
 # Overview:
 This Go program implements a simple RESTful API for managing products. It allows users to retrieve all products, add new products, and retrieve a single product by its ID. The API is built using the Gin web framework.
@@ -71,4 +71,54 @@ This Go program implements a simple RESTful API for managing products. It allows
 
 # Usage:
 - Start the server by running the main function.
-- The server listens on port 9090 by default. Update the port as needed.
+- The server listens on port 9090 by default. Update the port as needed. -->
+
+
+# Go Product Management API
+
+This Go program implements a simple RESTful API for managing products. It uses the Gin framework to handle HTTP requests and responses.
+
+## Endpoints
+
+### `GET /products`
+- Retrieves all products.
+- Response: Returns a JSON array containing all products.
+
+### `GET /products/:merchantID`
+- Retrieves products associated with a specific merchant.
+- Parameters:
+  - `merchantID`: ID of the merchant.
+- Response: Returns a JSON array containing products associated with the specified merchant ID.
+
+### `POST /products`
+- Creates a new product.
+- Request Body: JSON object representing the new product.
+- Response: Returns the created product with status code 201 if successful.
+
+### `PUT /products/:id`
+- Updates an existing product.
+- Parameters:
+  - `id`: ID of the product to be updated.
+- Request Body: JSON object representing the updated product.
+- Response: Returns the updated product with status code 200 if successful.
+
+### `DELETE /products/:id`
+- Deletes an existing product.
+- Parameters:
+  - `id`: ID of the product to be deleted.
+- Response: Returns status code 204 (No Content) if successful.
+
+## Data Model
+
+### Product
+- `ID`: Unique identifier for the product.
+- `Name`: Name of the product.
+- `Description`: Description of the product.
+- `Price`: Price of the product.
+- `CreatedAt`: Timestamp indicating when the product was created.
+
+## Sample Usage
+
+```bash
+# Start the server
+go run server.go
