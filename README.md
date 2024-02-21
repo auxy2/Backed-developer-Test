@@ -58,13 +58,13 @@ This Go program implements a simple RESTful API for managing products. It allows
                  "message": "Product Not Found"
                }
 
-Data Structure:
+# Data Structure:
 - The product data is stored in an in-memory slice of product structs.
 - Each product struct contains fields for ID, product name, description, and price.
 
-Dependencies:
+# Dependencies:
 - The program uses the Gin web framework for handling HTTP requests and responses.
 
-Usage:
+# Usage:
 - Start the server by running the main function.
 - The server listens on port 9090 by default. Update the port as needed.
