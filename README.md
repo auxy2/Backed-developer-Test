@@ -73,8 +73,7 @@ This Go program implements a simple RESTful API for managing products. It allows
 - Start the server by running the main function.
 - The server listens on port 9090 by default. Update the port as needed. -->
 
-
-#                 Product Management API
+# Product Management API
 
 This program implements a simple RESTful API for managing products. It uses the Gin framework to handle HTTP requests and responses.
 
