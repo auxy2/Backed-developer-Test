@@ -64,7 +64,7 @@ func main() {
 	router := gin.Default()
 	router.GET("/products", getAllProduts)
 	router.POST("/addProducts", addProducts)
-	router.GET("/products/:id", getProduct)
+	router.GET("/getProduct/:id", getProduct)
 
 	router.Run("localhost:9090")
 }
