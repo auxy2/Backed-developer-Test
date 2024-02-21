@@ -167,7 +167,7 @@ Gin web framework used for handling HTTP requests and responses
 
 - This table stores information about each product, including its name, description, price, and the merchant it belongs to.
 - The product_id serves as the primary key (PK) to uniquely identify each product.
-- The *merchant_id* is a foreign key (FK) referencing the merchant_id in the Merchant table, establishing a relationship between products and merchants.
+- The `merchant_id` is a foreign key (FK) referencing the merchant_id in the Merchant table, establishing a relationship between products and merchants.
 Indexing should be applied to the merchant_id column to facilitate efficient retrieval of products by merchant.
  
 #  Performance Optimization Strategies:
