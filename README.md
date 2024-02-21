@@ -45,6 +45,9 @@ This Go program implements a simple RESTful API for managing products. It allows
    - Response: Returns the details of the product if found, or a "Product Not Found" message otherwise.
    - Example:
      # Request: GET /getProduct/3
+     - Descrition: 
+     - Request:
+     - Response:
      Response: Status 200 OK
           [
                {
