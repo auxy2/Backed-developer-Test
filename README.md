@@ -54,7 +54,7 @@ This Go program implements a simple RESTful API for managing products. It allows
                  "price": 9893
                }
           
-    # *Request: GET /getProduct/10*
+    *Request: GET /getProduct/10*
      Response: Status 404 Not Found
      
                {
