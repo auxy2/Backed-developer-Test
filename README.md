@@ -158,29 +158,29 @@ Gin web framework used for handling HTTP requests and responses
 
 
 # Merchant Table:
-- This table stores information about each merchant, such as their name, email, etc.
-- The merchant_id serves as the primary key (PK) to uniquely identify each merchant.
+- This table stores information about each merchant, such as their `name`, `email`, etc.
+- The `merchant_id` serves as the primary key (PK) to uniquely identify each merchant.
 - Additional attributes like contact information, address, etc., can be added based on requirements.
 - To optimize performance, proper indexing should be applied to columns used frequently in search or filtering operations.
 
 # Product Table:
 
-- This table stores information about each product, including its name, description, price, and the merchant it belongs to.
+- This table stores information about each product, including its `name`, `description`, `price`, and the `merchant` it belongs to.
 - The product_id serves as the primary key (PK) to uniquely identify each product.
-- The `merchant_id` is a foreign key (FK) referencing the merchant_id in the Merchant table, establishing a relationship between products and merchants.
-Indexing should be applied to the merchant_id column to facilitate efficient retrieval of products by merchant.
+- The `merchant_id` is a foreign key (FK) referencing the `merchant_id` in the Merchant table, establishing a relationship between products and merchants.
+Indexing should be applied to the `merchant_id` column to facilitate efficient retrieval of products by merchant.
  
 #  Performance Optimization Strategies:
 
 
 # Indexing:
-- Indexes should be created on columns frequently used in search, filtering, and joining operations, such as merchant_id.
+- Indexes should be created on columns frequently used in search, filtering, and joining operations, such as `merchant_id`.
 - Proper indexing can significantly improve query performance, especially when dealing with large datasets.
 
 # Database Sharding:
 
 - For extremely large datasets, consider database sharding to horizontally partition the data across multiple database instances.
-- Sharding based on merchant ID or other relevant criteria can distribute the workload and improve scalability and performance.
+- Sharding based on `merchant ID` or other relevant criteria can distribute the workload and improve scalability and performance.
 
 # Caching:
 
