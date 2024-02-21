@@ -10,7 +10,12 @@ This Go program implements a simple RESTful API for managing products. It allows
    - Description: Retrieves all products available in the system.
    - Response: Returns a JSON array containing details of all products.
    - Example:
-     Request: GET /products
+    # Request: GET /products
+                   [
+                 {"id": "1", "product": "freezer", "description": "One door standing freezer", "price": 200456},
+                 {"id": "2", "product": "table", "description": "a wooden table well fuenished", "price": 10676},
+                 ...
+               ]
      Response: Status 200 OK
       
 
@@ -19,7 +24,7 @@ This Go program implements a simple RESTful API for managing products. It allows
    - Request: Requires a JSON object containing details of the new product (id, product, description, price).
    - Response: Returns the details of the newly added product.
    - Example:
-     Request: POST /addProducts
+     # Request: POST /addProducts
               {
                 "id": "5",
                 "product": "chair",
@@ -39,7 +44,7 @@ This Go program implements a simple RESTful API for managing products. It allows
    - Request: Requires the ID of the product to be specified in the URL.
    - Response: Returns the details of the product if found, or a "Product Not Found" message otherwise.
    - Example:
-     Request: GET /getProduct/3
+     # Request: GET /getProduct/3
      Response: Status 200 OK
                {
                  "id": "3",
