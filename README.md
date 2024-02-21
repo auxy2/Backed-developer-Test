@@ -46,17 +46,21 @@ This Go program implements a simple RESTful API for managing products. It allows
    - Example:
      # Request: GET /getProduct/3
      Response: Status 200 OK
+          [
                {
                  "id": "3",
                  "product": "3D light",
                  "description": "RGB light lamb for night",
                  "price": 9893
                }
+          ]
     # Request: GET /getProduct/10
      Response: Status 404 Not Found
+     [
                {
                  "message": "Product Not Found"
                }
+     ]
 
 # Data Structure:
 - The product data is stored in an in-memory slice of product structs.
