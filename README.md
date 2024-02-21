@@ -118,6 +118,17 @@ This program implements a simple RESTful API for managing products. It uses the 
 
 ## Sample Usage
 
+
+
+#  Dependencies
+
+## github.com/gin-gonic/gin
+Gin web framework used for handling HTTP requests and responses
+
 ```bash
 # Start the server
 go run server.go
+
+
+
+
