@@ -76,7 +76,7 @@ This Go program implements a simple RESTful API for managing products. It allows
 
 # Go Product Management API
 
-This Go program implements a simple RESTful API for managing products. It uses the Gin framework to handle HTTP requests and responses.
+This program implements a simple RESTful API for managing products. It uses the Gin framework to handle HTTP requests and responses.
 
 ## Endpoints
 
