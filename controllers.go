@@ -16,11 +16,11 @@ type Product struct {
 
 var products = []Product{}
 
-func getAllProduts(c *gin.Context) {
+func GetAllProduts(c *gin.Context) {
 	c.IndentedJSON(200, products)
 }
 
-func getProductsByMerchant(c *gin.Context) {
+func GetProductsByMerchant(c *gin.Context) {
 	merchantID := c.Param("merchantID")
 
 	merchantProducts := []Product{}
@@ -33,7 +33,7 @@ func getProductsByMerchant(c *gin.Context) {
 	c.JSON(200, merchantProducts)
 }
 
-func createProduct(c *gin.Context) {
+func CreateProduct(c *gin.Context) {
 	var newProduct Product
 	if err := c.BindJSON(&newProduct); err != nil {
 		c.JSON(400, gin.H{"error": err.Error()})
@@ -45,7 +45,7 @@ func createProduct(c *gin.Context) {
 	c.JSON(201, newProduct)
 }
 
-func updateProduct(c *gin.Context) {
+func UpdateProduct(c *gin.Context) {
 	id := c.Param("id")
 
 	var updatedProduct Product
@@ -72,7 +72,7 @@ func updateProduct(c *gin.Context) {
 	c.JSON(200, updatedProduct)
 }
 
-func deleteProduct(c *gin.Context) {
+func DeleteProduct(c *gin.Context) {
 	id := c.Param("id")
 
 	var found bool

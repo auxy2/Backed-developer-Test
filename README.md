@@ -43,8 +43,6 @@ This program implements a simple RESTful API for managing products. It uses the 
 - `Price`: Price of the product.
 - `CreatedAt`: Timestamp indicating when the product was created.
 
-## Sample Usage
-
 
 
 #  Dependencies
@@ -141,6 +139,9 @@ When selecting a database for this problem, consider the following factors:
 - NoSQL databases provide schema flexibility, making them suitable for agile development and handling diverse data structures.
 
 Based on these considerations, a combination of a scalable NoSQL database for product storage and a relational database for merchant information could be an effective solution. However, the specific choice of database depends on factors such as the application's requirements, data volume, expected growth, and available resources.
+
+
+## Sample Usage
 
 
 ```bash
