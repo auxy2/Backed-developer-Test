@@ -1,4 +1,4 @@
-module example/backend-developer-test
+module Backed-developer-Tes
 
 go 1.22.0
 
@@ -29,3 +29,5 @@ require (
 	google.golang.org/protobuf v1.30.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+// replace Backed-developer-Test => /Users/user/My_projects/LEARNINGS/Backed-developer-Test
