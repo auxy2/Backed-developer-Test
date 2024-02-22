@@ -2,9 +2,8 @@ package main
 
 import (
 	// "errors"
-	"time"
-
 	"github.com/gin-gonic/gin"
+	"time"
 )
 
 type Product struct {
@@ -17,17 +16,6 @@ type Product struct {
 
 var products = []Product{}
 
-func main() {
-	router := gin.Default()
-
-	router.GET("/products", getAllProduts)
-	router.GET("/products/:merchantID", getProductsByMerchant)
-	router.POST("/products", createProduct)
-	router.PUT("/products/:id", updateProduct)
-	router.DELETE("/products/:id", deleteProduct)
-
-	router.Run(":9090")
-}
 func getAllProduts(c *gin.Context) {
 	c.IndentedJSON(200, products)
 }
