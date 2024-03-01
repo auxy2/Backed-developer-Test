@@ -1,11 +1,13 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
 	router := gin.Default()
 
-	router.GET("/products", getAllProducts)
+	router.GET("/products", controllers.getAllProducts)
 	router.GET("/products/:merchantID", getProductsByMerchant)
 	router.POST("/products", createProduct)
 	router.PUT("/products/:id", updatedProduct)
