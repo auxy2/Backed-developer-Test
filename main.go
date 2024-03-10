@@ -14,5 +14,5 @@ func main() {
 	router.PUT("/products/:id", controller.UpdatedProduct)
 	router.DELETE("/products/:id", controller.DeleteProduct)
 
-	router.Run("local:9090")
+	router.Run("local:9090")x
 }
